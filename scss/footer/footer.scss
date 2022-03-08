@@ -1,0 +1,13 @@
+footer {
+  height: $nav-footer-height;
+  background-color: $site-background;
+
+  .footer-content {
+    max-width: $content-width;
+    margin: 0 auto;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
@@ -19,59 +20,94 @@ p {
   margin-bottom: 16px;
 }
 
-.wrapper {
-  min-height: 800px;
-  width: 70%;
-  background-color: beige;
+#app {
+  max-width: 980px;
   margin: 0 auto;
-}
-.wrapper .box {
-  width: 50%;
-  height: 200px;
-  background-color: aqua;
-}
-.wrapper .media-box {
-  width: 600px;
-  height: 100px;
-  background-color: brown;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 800px) {
-  .wrapper {
-    background-color: red;
-  }
-}
-@media all and (max-width: 600px) {
-  .wrapper .media-box {
-    width: 300px;
-  }
-}
-.photos {
-  max-width: 940px;
-  min-height: 300px;
-  background-color: aqua;
+nav {
+  max-width: 980px;
   margin: 0 auto;
+  background-color: #79addc;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.photos .photo {
-  width: 300px;
+nav .logo {
+  width: 100px;
+  height: 50px;
+  background-color: yellow;
 }
-.photos .photo img {
-  display: block;
-}
-.photos .photo p {
-  font-size: 11px;
-  font-style: italic;
-  text-align: center;
-}
-
-@media screen and (max-width: 1000px) {
-  .photos {
-    width: 300px;
-    flex-direction: column;
-    min-height: 940px;
-  }
+nav .link a {
+  text-decoration: none;
+  margin-left: 20px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+footer {
+  height: 100px;
+  background-color: #79addc;
+}
+footer .footer-content {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about {
+  margin-top: 110px;
+  margin-bottom: 180px;
+}
+.about .about-header h1 {
+  margin-bottom: 2px;
+}
+.about .about-header .border-bottom {
+  width: 97px;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 16px;
+}
+.about .about-client-quotes {
+  margin-top: 107px;
+}
+.about .client-box {
+  max-width: 772px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 50px;
+}
+.about .client-box .client-image {
+  width: 360px;
+  height: 150px;
+  overflow: hidden;
+  margin-right: 21px;
+}
+.about .client-box img {
+  width: 100%;
+}
+.about .client-box .client-quote {
+  max-width: 440px;
+  margin-bottom: 20px;
+}
+.about .client-box .client-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
