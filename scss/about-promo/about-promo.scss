@@ -1,0 +1,25 @@
+.about-promo {
+  max-width: $content-width;
+  min-height: 304px;
+  background-color: blue;
+  .promo {
+    @include promo();
+
+    height: 304px;
+    width: 235px;
+    background-color: #faebd7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .promo-text {
+      font-size: 24px;
+      font-family: cursive;
+      margin-bottom: 60px;
+    }
+    .read-btn {
+      @include site-button(50px 30px);
+    }
+  }
+}
